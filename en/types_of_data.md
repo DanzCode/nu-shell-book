@@ -67,13 +67,13 @@ This chart shows all durations currently supported:
 
 | Duration | Length     |
 |----------|------------|
-|1s        | one second |
-|1m        | one minute |
-|1h        | one hour   |
-|1d        | one day    |
-|1w        | one week   |
-|1M        | one month  |
-|1y        | one year   |
+|1sec      | one second |
+|1min      | one minute |
+|1hr       | one hour   |
+|1day      | one day    |
+|1wk       | one week   |
+|1mon      | one month  |
+|1yr       | one year   |
 
 ### Ranges
 
