@@ -130,15 +130,17 @@ Si prefieres no instalar Rust mediante `rustup`, también puedes instalar a trav
 
 Vas a necesitar instalar "pkg-config" y "libssl-dev":
 
-```
-apt install pkg-config libssl-dev
-```
+{% include installation/install_pkg_config_libssl_dev.md %}
 
 Usuarios de Linux que desean usar las funcionalidades opcionales `rawkey` o `clipboard` necesitarán instalar los paquetes "libx11-dev" y "libxcb-composite0-dev":
 
-```
-apt install libxcb-composite0-dev libx11-dev
-```
+{% include installation/use_rawkey_and_clipboard.md %}
+
+### Distribuciones basadas en RHEL
+
+Vas a necesitar instalar "libxcb", "openssl-devel" and "libX11-devel":
+
+{% include installation/install_rhel_dependencies.md %}
 
 ### macOS
 

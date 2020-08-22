@@ -100,9 +100,11 @@ Linux users who wish to use the `rawkey` or `clipboard` optional features will n
 
 {% include installation/use_rawkey_and_clipboard.md %}
 
-### RHEL
+### RHEL based distros
 
-You'll need to install "libxcb", "libssl-dev", and "lib11-dev".
+You will need to install "libxcb", "openssl-devel" and "libX11-devel":
+
+{% include installation/install_rhel_dependencies.md %}
 
 ### macOS
 
