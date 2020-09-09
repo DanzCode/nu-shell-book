@@ -61,7 +61,7 @@ The `get` command lets us jump into the contents of a column of the table. Here,
 
 {% include introduction/sys_get_nested_example.md %}
 
-Right now, there's just one user on the system named "jonathan". You'll notice that we can pass a path (the `host.sessions` part) and not just the name of the column. Nu will take the path and go to the corresponding bit of data in the table.
+Right now, there's just one user on the system named "jonathan". You'll notice that we can pass a column path (the `host.sessions` part) and not just the name of the column. Nu will take the column path and go to the corresponding bit of data in the table.
 
 You might have noticed something else that's different. Rather than having a table of data, we have just a single element: the string "jonathan". Nu works with both tables of data as well as strings. Strings are an important part of working with commands outside of Nu.
 

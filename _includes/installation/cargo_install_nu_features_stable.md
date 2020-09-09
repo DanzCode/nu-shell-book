@@ -1,3 +1,3 @@
 ```
-> cargo install nu --features=stable
+> cargo install nu --features=extra
 ```
