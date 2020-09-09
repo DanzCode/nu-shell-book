@@ -1,4 +1,4 @@
 ```
 > cd nushell
-nushell> cargo build --workspace --features=stable && cargo run --features=stable
+nushell> cargo build --workspace --features=extra && cargo run --features=extra
 ```

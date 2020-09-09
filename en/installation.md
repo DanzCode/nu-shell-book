@@ -72,21 +72,19 @@ For Rust to work properly, you'll need to have a compatible compiler suite insta
 * macOS: Clang (install Xcode)
 * Windows: [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 
-For Linux and macOS, once you have installed the compiler, you are ready to install Rust via `rustup` (see below).
-
 For Windows, when you install Visual Studio Community Edition, make sure to install the "C++ build tools" as what we need is `link.exe` which is provided as part of that optional install.  With that, we're ready to move to the next step.
 
 ### Installing Rust
 
-If we don't already have Rust on our system, the best way to install it via [rustup](https://rustup.rs/). Rustup is a way of managing Rust installations, including managing using different Rust versions. 
+If we don't already have Rust on our system, the best way to install it is via [rustup](https://rustup.rs/). Rustup is a way of managing Rust installations, including managing using different Rust versions. 
 
-Nu currently requires the **latest stable (1.43 or later)** version of Rust. The best way to let `rustup` find the correct version for you. When you first open `rustup` it will ask what version of Rust you wish to install:
+Nu currently requires the **latest stable (1.46 or later)** version of Rust. The best way is to let `rustup` find the correct version for you. When you first open `rustup` it will ask what version of Rust you wish to install:
 
 {% include installation/rustup_choose_rust_version.md %}
 
 Once we are ready, we press 1 and then enter.
 
-If you'd rather not install Rust via `rustup`, you can also install it via other methods (e.g. from a package in a Linux distro). Just be sure to install a version of Rust that is 1.39 or later.
+If you'd rather not install Rust via `rustup`, you can also install it via other methods (e.g. from a package in a Linux distro). Just be sure to install a version of Rust that is 1.46 or later.
 
 ## Dependencies
 

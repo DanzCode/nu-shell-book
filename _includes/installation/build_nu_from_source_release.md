@@ -1,3 +1,3 @@
 ```
-nushell> cargo build --release --workspace --features=stable && cargo run --release --features=stable
+nushell> cargo build --release --workspace --features=extra && cargo run --release --features=extra
 ```

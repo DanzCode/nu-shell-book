@@ -63,6 +63,12 @@ Nu also uses modern globs as well, which allow you access to deeper directories.
 
 To change from the current directory to a new one, we use the `cd` command. Just as in other shells, we can use either the name of the directory, or if we want to go up a directory we can use the `..` shortcut.
 
+Changing the current working directory can also be done if `cd` is omitted and a path by itself is given:
+
+```
+> new_directory
+```
+
 ## Filesystem commands
 
 Nu also provides some basic filesystem commands that works cross-platform. 
