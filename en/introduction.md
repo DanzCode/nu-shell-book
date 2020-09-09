@@ -37,15 +37,15 @@ Just as in the Unix philosophy, being able to have commands talk to each other g
 
 {% include introduction/ps_example.md %}
 
-You may be familiar with the `ps` command if you've used Linux. With it, we can get a list of all the current processes that the system is running, what their status is, and what their name is. We can also see the CPU load for the process.
+You may be familiar with the `ps` command if you've used Linux. With it, we can get a list of all the current processes that the system is running, what their status is, and what their name is. We can also see the CPU load for the processes.
 
 What if we wanted to show the processes that were actively using the CPU? Just like we did with the `ls` command earlier, we can also work with the table that the `ps` command gives back to us:
 
 {% include introduction/ps_where_example.md %}
 
-So far, we've seen using `ls` and `ps` to list files and processes. Nu also offers other commands that can create tables of useful information. Next, let's explore `date` and `sys`.
+So far, we've been using `ls` and `ps` to list files and processes. Nu also offers other commands that can create tables of useful information. Next, let's explore `date` and `sys`.
 
-Running `date` gives us information about the current day and time:
+Running `date utc` gives us information about the current day and time:
 
 {% include introduction/date_example.md %}
 
@@ -53,7 +53,7 @@ Running `sys` gives information about the system that Nu is running on:
 
 {% include introduction/sys_example.md %}
 
-This is a bit different than the tables we saw before. The `sys` command gives us a table that contains structured tables in the cells instead of simple values. To take a look at this data, we need to select the column to view:
+This is a bit different than the tables we saw before. The `sys` command gives us a table that contains structured tables in the cells instead of simple values. To take a look at this data, we need to get the column to view:
 
 {% include introduction/sys_get_example.md %}
 
