@@ -26,7 +26,7 @@ Note: this table assumes Nu 0.14.1 or later.
 | -        | -        | -                   | -                    | -                      | -                  |
 | *        | *        | *                   | *                    | *                      | *                  |
 | /        | /        | /                   | /                    | /                      | /                  |
-| in:      | in       | re, in, startswith  | Contains, StartsWith | -In                    | case in            |
-| not-in:  | not in   | not in              | Except               | -NotIn                 |                    |
+| in       | in       | re, in, startswith  | Contains, StartsWith | -In                    | case in            |
+| not-in   | not in   | not in              | Except               | -NotIn                 |                    |
 | &&       | and      | and                 | &&                   | -And                   | -a, &&             |
 | \|\|     | or       | or                  | \|\|                 | -Or                    | -o, \|\|           |
