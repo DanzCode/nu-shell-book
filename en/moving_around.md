@@ -17,7 +17,7 @@ Early shells allow you to move around your filesystem and run commands, and mode
 
 As we've seen in other chapters, `ls` is a command for viewing the contents of a path. Nu will return the contents as a table that we can use.
 
-The `ls` command also takes an optional argument, to change what you'd like to view.  For example, we can list the files that end in ".txt"
+The `ls` command also takes an optional argument, to change what you'd like to view.  For example, we can list the files that end in ".md"
 
 ```
 > ls *.md
