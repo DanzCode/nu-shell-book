@@ -103,7 +103,7 @@ We can see that we're working with the lines because we're back into a table. Ou
 That almost looks correct. Looks like there is extra space there. Let's `trim` that extra space:
 
 ```
-> open people.txt | lines | split column "|" | trim
+> open people.txt | lines | split column "|" | str trim
 ───┬─────────┬─────────┬──────────
  # │ Column1 │ Column2 │ Column3 
 ───┼─────────┼─────────┼──────────
@@ -116,7 +116,7 @@ That almost looks correct. Looks like there is extra space there. Let's `trim` t
 Not bad. The `split` command gives us data we can use. It also goes ahead and gives us default column names:
 
 ```
-> open people.txt | lines | split column "|" | trim | get Column1
+> open people.txt | lines | split column "|" | str trim | get Column1
 ───┬─────────
  0 │ Octavia 
  1 │ Bob 
@@ -127,7 +127,7 @@ Not bad. The `split` command gives us data we can use. It also goes ahead and gi
 We can also name our columns instead of using the default names:
 
 ```
-> open people.txt | lines | split column "|" first_name last_name job | trim 
+> open people.txt | lines | split column "|" first_name last_name job | str trim 
 ───┬────────────┬───────────┬──────────
  # │ first_name │ last_name │ job 
 ───┼────────────┼───────────┼──────────
@@ -140,7 +140,7 @@ We can also name our columns instead of using the default names:
 Now that our data is in a table, we can use all the commands we've used on tables before:
 
 ```
-> open people.txt | lines | split column "|" first_name last_name job | trim | sort-by first_name
+> open people.txt | lines | split column "|" first_name last_name job | str trim | sort-by first_name
 ───┬────────────┬───────────┬──────────
  # │ first_name │ last_name │ job 
 ───┼────────────┼───────────┼──────────
@@ -154,7 +154,6 @@ There are other commands you can use to work with strings:
 * str
 * lines
 * size
-* trim
 
 There is also a set of helper commands we can call if we know the data has a structure that Nu should be able to understand. For example, let's open a Rust lock file:
 

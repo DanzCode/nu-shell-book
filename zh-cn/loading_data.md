@@ -107,7 +107,7 @@ Antonio | Vivaldi | Composer
 这看起来就差不多了。但貌似它还有一些额外的空白字符。让我们 `trim` 掉这些空格：
 
 ```
-> open people.txt | lines | split-column "|" | trim
+> open people.txt | lines | split-column "|" | str trim
 ───┬─────────┬─────────┬──────────
  # │ Column1 │ Column2 │ Column3
 ───┼─────────┼─────────┼──────────
@@ -120,7 +120,7 @@ Antonio | Vivaldi | Composer
 不错。 `split-column` 命令得到了我们可以使用的数据。它也给了我们一行默认列名：
 
 ```
-> open people.txt | lines | split-column "|" | trim | get Column1
+> open people.txt | lines | split-column "|" | str trim | get Column1
 ───┬─────────
  0 │ Octavia
  1 │ Bob
@@ -131,7 +131,7 @@ Antonio | Vivaldi | Composer
 我们也可以用我们提供的列名代替默认的：
 
 ```
-> open people.txt | lines | split-column "|" first_name last_name job | trim
+> open people.txt | lines | split-column "|" first_name last_name job | str trim
 ───┬────────────┬───────────┬──────────
  # │ first_name │ last_name │ job
 ───┼────────────┼───────────┼──────────
@@ -144,7 +144,7 @@ Antonio | Vivaldi | Composer
 现在，我们的数据在一个表中了，我们可以使用之前我们对表所用的一切命令来处理它：
 
 ```
-> open people.txt | lines | split-column "|" first_name last_name job | trim | sort-by first_name
+> open people.txt | lines | split-column "|" first_name last_name job | str trim | sort-by first_name
 ───┬────────────┬───────────┬──────────
  # │ first_name │ last_name │ job
 ───┼────────────┼───────────┼──────────
@@ -159,7 +159,6 @@ Antonio | Vivaldi | Composer
 * str
 * lines
 * size
-* trim
 
 如果我们已经知道数据具有 Nu 能够理解的格式，则可以调用一组帮助程序命令。 例如，我们打开一个 Cargo.lock 文件：
 

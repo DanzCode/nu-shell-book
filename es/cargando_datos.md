@@ -151,7 +151,6 @@ Hay otros comandos que puedes usar para trabajar con cadenas:
 * str
 * lines
 * size
-* trim
 
 También hay un conjunto de comandos auxiliares que podemos llamar si conocemos de antemano que los datos tienen una estructura que Nu debería de entender. Por ejemplo, abramos un Rust archivo lock:
 
