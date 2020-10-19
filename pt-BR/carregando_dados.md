@@ -151,7 +151,6 @@ Há outros comandos que você pode usar para trabalhar com strings:
 * str
 * lines
 * size
-* trim
 
 Há também um conjunto de comandos auxiliares que podemos chamar se soubermos que os dados têm uma estrutura que o Nu deve ser capaz de entender. Por exemplo, vamos abrir um arquivo de lock do Rust:
 
