@@ -24,17 +24,17 @@ En Nu puedes realizar lo usual: sumar, restar, mutiplicar y dividir con los oper
 
 Puedes usar paréntesis para agrupar expresiones matemáticas en modo `math`. Esto te permite escribir `(1 + 2) * 3` si deseas que adición tenga mayor precedencia.
 
-## `in:` y `not-in:`
+## `in` y `not-in`
 
-Puedes revisar si un valor se encuentra dentro de un conjunto de valores o no, usando los operadores `in:` y `not-in:`.
+Puedes revisar si un valor se encuentra dentro de un conjunto de valores o no, usando los operadores `in` y `not-in`.
 
 ```
-> = 1 in: [1 2 3]
+> = 1 in [1 2 3]
 true
 ```
 
 ```
-> = 1 not-in: [1 2 3]
+> = 1 not-in [1 2 3]
 false
 ```
 
@@ -65,6 +65,6 @@ Los siguientes comparadores también se encuentran disponibles:
 
 ## Operadores Compuestos
 
-Nushell también soporta `&&` y `||` para unir dos operaciones que regresen valores booleanos, usando `y` y `o` respectivamente. Por ejemplo: `ls | where name in: ["uno" "dos" "tres"] && size > 10kb`
+Nushell también soporta `&&` y `||` para unir dos operaciones que regresen valores booleanos, usando `y` y `o` respectivamente. Por ejemplo: `ls | where name in ["uno" "dos" "tres"] && size > 10kb`
 
 

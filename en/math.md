@@ -24,17 +24,17 @@ In Nu, you can do the usual add, subtract, multiply and divide with the operator
 
 You can use parentheses to group math expression in math mode. This allows you to write `(1 + 2) * 3` if you want the addition to have higher precedence.
 
-## `in:` and `not-in:`
+## `in` and `not-in`
 
-You can check if a value is in a set of values or not using the `in:` and `not-in:` operators.
+You can check if a value is in a set of values or not using the `in` and `not-in` operators.
 
 ```
-> = 1 in: [1 2 3]
+> = 1 in [1 2 3]
 true
 ```
 
 ```
-> = 1 not-in: [1 2 3]
+> = 1 not-in [1 2 3]
 false
 ```
 
@@ -65,5 +65,5 @@ The following comparisons are also available:
 
 ## Compound operators
 
-Nushell also supports `&&` and `||` to join two operations that return boolean values, using 'and' and 'or' respectively.  For example: `ls | where name in: ["one" "two" "three"] && size > 10kb`
+Nushell also supports `&&` and `||` to join two operations that return boolean values, using 'and' and 'or' respectively.  For example: `ls | where name in ["one" "two" "three"] && size > 10kb`
 
