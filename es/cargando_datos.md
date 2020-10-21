@@ -168,7 +168,7 @@ The `from` command can be used for each of the structured data text formats that
 El archivo "Cargo.lock" es un archivo en formato .toml pero la extensión del archivo no es .toml. Está bien, podemos usar el comando `from` usando el subcomando `toml`:
 
 ```
-> open Cargo.lock | from-toml
+> open Cargo.lock | from toml
 ----------+-------------
  metadata | package 
 ----------+-------------

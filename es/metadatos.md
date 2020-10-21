@@ -10,17 +10,17 @@ link_next: /es/shells_en_shells.html
 Al usar Nu es posible que hayan momentos que has encontrado como si algo extra sucediera detrás de escenas. Por ejemplo digamos que intentas abrir un archivo soportado por Nu para luego olvidarte e intentar convertir nuevamente:
 
 ```
-> open Cargo.toml | from-toml
+> open Cargo.toml | from toml
 error: Expected a string from pipeline
 - shell:1:18
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |                   ^^^^^^^^^ requires string input
 - shell:1:5
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |      ---------- object originates from here
 ```
 
-El mensaje de error nos indica que hemos proporcionado a `from-toml` algo distinto a una cadena pero también el origen del valor. ¿Cómo puede saberlo?
+El mensaje de error nos indica que hemos proporcionado a `from toml` algo distinto a una cadena pero también el origen del valor. ¿Cómo puede saberlo?
 
 Valores que fluyen a través de la tubería en Nu comúnmente disponen de información adicional (o metadatos) adjuntadas en las mismas. Se conocen como etiquetas como las etiquetas en una tienda. Estas etiquetas no afecta los datos pero permiten a Nu mejorar la experiencia mientras se trabaja con esos datos.
 

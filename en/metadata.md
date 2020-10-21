@@ -10,17 +10,17 @@ link_next: /en/shells_in_shells.html
 In using Nu, you may have come across times where you felt like there was something extra going on behind the scenes. For example, let's say that you try to open a file that Nu supports only to forget and try to convert again:
 
 ```
-> open Cargo.toml | from-toml
+> open Cargo.toml | from toml
 error: Expected a string from pipeline
 - shell:1:18
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |                   ^^^^^^^^^ requires string input
 - shell:1:5
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |      ---------- object originates from here
 ```
 
-The error message tells us not only that what we gave `from-toml` wasn't a string, but also where the value originally came from. How would it know that?
+The error message tells us not only that what we gave `from toml` wasn't a string, but also where the value originally came from. How would it know that?
 
 Values that flow through a pipeline in Nu often have a set of additional information, or metadata, attached to them. These are known as tags, like the tags on an item in a store. These tags don't affect the data, but they give Nu a way to improve the experience of working with that data.
 

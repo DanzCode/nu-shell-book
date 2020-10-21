@@ -163,10 +163,10 @@ name = "adhoc_derive"
 version = "0.1.2"
 ```
 
-O arquivo "Cargo.lock" é na verdade um arquivo .toml, mas a extensão do arquivo não é .toml. Tudo bem, podemos usar o comando `from-toml`:
+O arquivo "Cargo.lock" é na verdade um arquivo .toml, mas a extensão do arquivo não é .toml. Tudo bem, podemos usar o comando `from toml`:
 
 ```shell
-> open Cargo.lock | from-toml
+> open Cargo.lock | from toml
 ----------+-------------
  metadata | package 
 ----------+-------------
@@ -174,7 +174,7 @@ O arquivo "Cargo.lock" é na verdade um arquivo .toml, mas a extensão do arquiv
 ----------+-------------
 ```
 
-Há um comando `from-` para cada formato de dados estruturados em texto que o Nu entende e pode abrir.
+Há um comando `from` para cada formato de dados estruturados em texto que o Nu entende e pode abrir.
 
 ## Abrindo no modo bruto
 
