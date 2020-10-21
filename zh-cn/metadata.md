@@ -10,17 +10,17 @@ link_next: /zh-cn/shells_in_shells.html
 在使用 Nu 的过程中，你可能会遇到一些幕后工作。 例如，假设你尝试打开 Nu 所支持的文件并再次转换：
 
 ```
-> open Cargo.toml | from-toml
+> open Cargo.toml | from toml
 error: Expected a string from pipeline
 - shell:1:18
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |                   ^^^^^^^^^ requires string input
 - shell:1:5
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |      ---------- object originates from here
 ```
 
-报错告诉我们，不仅 `from-toml` 得到了一个非字符串，而且来源的最初值也不是。这是怎么做到的？
+报错告诉我们，不仅 `from toml` 得到了一个非字符串，而且来源的最初值也不是。这是怎么做到的？
 
 通过 Nu 中的管道流动的值通常具有一组附加信息或元数据 —— 标签。就像商店中商品上的标签一样， 这些标签不会影响数据，但是它们为 Nu 提供了一种改善该数据的使用体验的方法。
 

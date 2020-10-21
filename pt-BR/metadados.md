@@ -10,17 +10,17 @@ link_next: /pt-BR/shells_em_shells.html
 Usando o Nu vocë pode se deparar com momentos em que sente como se houvesse algo a mais acontecendo nos bastidores. Por exemplo, digamos que vocë vai tentar abrir um arquivo mas se esquece que ele é suportado pelo Nu e tenta convertê-lo novamente:
 
 ```shell
-> open Cargo.toml | from-toml
+> open Cargo.toml | from toml
 error: Expected a string from pipeline
 - shell:1:18
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |                   ^^^^^^^^^ requires string input
 - shell:1:5
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |      ---------- object originates from here
 ```
 
-A mensagem de erro nos diz não só que o que passamos para o `from-toml` não era uma string, mas também de onde o valor veio originalmente. Como o Nu sabe isso?
+A mensagem de erro nos diz não só que o que passamos para o `from toml` não era uma string, mas também de onde o valor veio originalmente. Como o Nu sabe isso?
 
 Valores que fluem pelo pipeline do Nu normalmente trazem consigo um conjunto adicional de informações, ou metadados, conhecidos como tags, semnelhantes às etiquetas penduradas nos produtos de uma loja. Essas tags não afetam os dados, mas proporcionam ao Nu uma forma de aprimorar a experiência de se trabalhar com esses dados.
 

@@ -165,10 +165,10 @@ name = "adhoc_derive"
 version = "0.1.2"
 ```
 
-"Cargo.lock"ファイルは実際には.tomlファイルですが、ファイル拡張子が.tomlではありません。でも大丈夫です、`from-toml`コマンドが使えます。
+"Cargo.lock"ファイルは実際には.tomlファイルですが、ファイル拡張子が.tomlではありません。でも大丈夫です、`from toml`コマンドが使えます。
 
 ```
-> open Cargo.lock | from-toml
+> open Cargo.lock | from toml
 ----------+-------------
  metadata | package
 ----------+-------------
@@ -176,7 +176,7 @@ version = "0.1.2"
 ----------+-------------
 ```
 
-Nuが理解できるテキスト形式ごとに`from-`コマンドが用意されています。
+Nuが理解できるテキスト形式ごとに`from`コマンドが用意されています。
 
 ## rawモードで開く
 

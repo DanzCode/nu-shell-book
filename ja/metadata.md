@@ -10,17 +10,17 @@ link_next: /ja/shells_in_shells.html
 Nuを使用していると裏でなにか特別なことがおきているのではないかと思うことがあるでしょう。例えば、Nuがサポートしているファイル形式を忘れていて、余計に変換しようとしてしまったとしましょう。
 
 ```
-> open Cargo.toml | from-toml
+> open Cargo.toml | from toml
 error: Expected a string from pipeline
 - shell:1:18
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |                   ^^^^^^^^^ requires string input
 - shell:1:5
-1 | open Cargo.toml | from-toml
+1 | open Cargo.toml | from toml
   |      ---------- object originates from here
 ```
 
-エラーメッセージは、`from-toml`に渡したものが文字列ではなかったことだけではなく、元の値がどこから来たかも示しています。どうやってこれを知るのでしょうか。
+エラーメッセージは、`from toml`に渡したものが文字列ではなかったことだけではなく、元の値がどこから来たかも示しています。どうやってこれを知るのでしょうか。
 
 Nuのパイプラインを流れる値には、多くの場合、メタデータと呼ばれる一連の追加情報が付加されます。これらはストアにあるアイテムにつけられているタグのようにタグと呼ばれています。これらのタグはデータには影響しませんが、データを操作する際の体験を向上させます。
 
