@@ -32,6 +32,7 @@ Note: this table assumes Nu 0.14.1 or later.
 | | `rm -t <path>` | Move the given file to the system trash |
 | `rm -rf <path>` | `rm -r <path>` | Recursively removes the given path |
 | `chmod` | `<not yet possible>` | Changes the file attributes |
+| `date -d <date>` | `echo <date> | str to-datetime -f <format>` | Parse a date ([format documentation](https://docs.rs/chrono/0.4.15/chrono/format/strftime/index.html)) |
 | `man <command>` | `help <command>` | Get the help for a given command |
 |  | `help commands` | List all available commands |
 | `command1 && command2` | `command1; command2` | Run a command, and if it's successful run a second |
