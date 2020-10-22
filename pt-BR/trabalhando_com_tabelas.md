@@ -58,7 +58,7 @@ Podemos ordenar uma tabela por qualquer coluna que possa ser comparada. Por exem
 Podemos selecionar dados de uma tabela escolhendo colunas ou linhas específicas. Vamos escolher algumas colunas da nossa tabela:
 
 ```shell
-> ls | pick name size
+> ls | select name size
 ---+---------------+---------
  # | name          | size 
 ---+---------------+---------
@@ -158,10 +158,10 @@ Até agora, trabalhamos as tabelas reduzindo-as para somente o que precisamos. �
 
 Agora temos os valores para cada um dos nomes de arquivo.
 
-Parece muito com o comando `pick` que vimos antes, então vamos colocá-lo aqui de novo para compararmos os dois:
+Parece muito com o comando `select` que vimos antes, então vamos colocá-lo aqui de novo para compararmos os dois:
 
 ```shell
-> ls | pick name
+> ls | select name
 ---+---------------
  # | name 
 ---+---------------
@@ -180,7 +180,7 @@ Parece muito com o comando `pick` que vimos antes, então vamos colocá-lo aqui 
 
 São muito parecidos! Vamos tentar explicar a diferença entre esses dois comandos para esclarecer:
 
-* `pick` - cria uam nova tabela que inclui apenas as colunas especificadas
+* `select` - cria uam nova tabela que inclui apenas as colunas especificadas
 * `get` - retorna os valores dentro da coluna especificada
 
 A única maneira de diferenciá-los olhando para a tabela é o nome característico da coluna `value`, que nos permite saber que se trata de uma lista de valores com a qual podemos trabalhar.
