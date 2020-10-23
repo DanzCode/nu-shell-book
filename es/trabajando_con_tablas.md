@@ -58,7 +58,7 @@ Podemos ordenar una tabla con cualquier columna que pueda ser comparada. Por eje
 Podemos seleccionar datos de una tabla seleccionando columnas o filas específicas. Escojamos algunas columnas de nuestra tabla para usar:
 
 ```
-> ls | pick name size
+> ls | select name size
 ---+---------------+---------
  # | name          | size 
 ---+---------------+---------
@@ -158,10 +158,10 @@ Hasta ahora hemos trabajado con tablas reduciendo la tabla a solo lo que necesit
 
 Ahora tenemos los valores de cada nombre de los archivos.
 
-Puede parecerse al comando `pick` que vimos previamente, probemos `pick` para comparar los dos:
+Puede parecerse al comando `select` que vimos previamente, probemos `select` para comparar los dos:
 
 ```
-> ls | pick name
+> ls | select name
 ---+---------------
  # | name 
 ---+---------------
@@ -180,7 +180,7 @@ Puede parecerse al comando `pick` que vimos previamente, probemos `pick` para co
 
 ¡Se ven muy similares! Veamos si podemos explicar la diferencia entre estos dos comandos para aclarar:
 
-* `pick` - crea una tabla donde incluye únicamente las columnas indicadas
+* `select` - crea una tabla donde incluye únicamente las columnas indicadas
 * `get` - devuelve los valores dentro de la columna indicada
 
 La manera de distinguirlas mirando la tabla de forma característica es con el nombre de columna `value` que nos permite saber que será una lista de valores con la que podemos trabajar.
